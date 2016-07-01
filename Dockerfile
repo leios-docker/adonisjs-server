@@ -29,4 +29,5 @@ RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x
 	&& npm install -g adonis-cli \
 	&& npm cache clear
 
-CMD [ "node" ]
+WORKDIR /work
+CMD [ "npm start" ]
