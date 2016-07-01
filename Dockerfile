@@ -27,6 +27,7 @@ RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x
 	&& rm "node-v$NODE_VERSION-linux-x64.tar.gz" \
 	&& npm install -g npm@3.10.3 \
 	&& npm install -g adonis-cli \
+	&& npm install -g nodemon \
 	&& npm cache clear
 
 WORKDIR /work
